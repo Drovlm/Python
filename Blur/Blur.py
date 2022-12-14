@@ -1,8 +1,8 @@
 import cv2
  
 cap = cv2.VideoCapture(0)
-faceCascade = cv2.CascadeClassifier('C:\\Users\\Mudar\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\data\\haarcascade_frontalface_default.xml')
- 
+faceCascade = cv2.CascadeClassifier('C:\\Users\\*********\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\cv2\data\\haarcascade_frontalface_default.xml')
+ # ************You need to write your user name in place of the stars =D****************
 while True:
     success,img = cap.read()
     faces = faceCascade.detectMultiScale(img,1.2,4)
